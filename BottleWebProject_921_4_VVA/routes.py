@@ -33,3 +33,14 @@ def about():
         message='Your application description page.',
         year=datetime.now().year
     )
+
+
+@route('/binary')
+@view('binary')
+def about():
+    """Renders the about page."""
+    return dict(
+        title='Бинарные отношения',
+        message='Your application description page.',
+        year=datetime.now().year
+    )
