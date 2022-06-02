@@ -35,8 +35,8 @@ def about():
     )
 
 
-@route('/binary')
-@view('binary')
+@route('/binary2')
+@view('binary2')
 def about():
     """Renders the about page."""
     return dict(

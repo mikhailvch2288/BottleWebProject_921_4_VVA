@@ -22,13 +22,18 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/home">Главная</a></li>
+                    <li><a href="/contact">О нас </a></li>
+                    <li><a href="/binary2">Бинарные отношения </a></li>
+                   
                 </ul>
             </div>
         </div>
     </div>
+
+
+
+
 
     <div class="container body-content">
         {{!base}}
