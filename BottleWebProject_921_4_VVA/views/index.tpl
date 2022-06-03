@@ -1,29 +1,40 @@
-% rebase('layout.tpl', title='Home Page', year=year)
+% rebase('layout.tpl', year=year)
 
-<div class="jumbotron">
-    <h1>Practice</h1>
-    <p class="lead">Веб-сайт по практике позволяет быстро и удобно решать задачи по математическому моделированию:</p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Bottle gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://bottlepy.org/docs/dev/index.html">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+<div>
+    <div class="description_container">
+        <div class="top_margin_5">
+            <p class="title">Веб-сайт Duke позволяет быстро и удобно решать задачи по математическому моделированию:</p>
+            <a href="/" class="underlined-link">
+                <p class="description">Калькулятор свойств отношений (с нахождением дополнительного)</p>
+            </a>
+            <a href="/binary2" class="underlined-link">
+                <p class="description">Калькулятор свойств отношений (с нахождением обратного)</p>
+            </a>
+            <a href="/" class="underlined-link">
+                <p class="description">Калькулятор максимального потока</p>
+            </a>
+        </div>
+        <div class="top_margin_5">
+            <h1 class="normal-letters">Бинарные отношения</h1>
+            <p class="description">Задача на определение свойств бинарных отношений подразумевает под собой определение того, обладает ли данное отношение свойствами транзитивности, антитранзитивности, симметричности, асимметричности, рефлективности, антирефлексивности, а также, исходя из результатов, необходимо определить, обладает ли данное отношение свойствами. Определения данных свойств приведены ниже:</p>
+            <p class="description">Симметричность отношения R означает, что если (х, у) ∈ R, то (у, x) ∈ R, т.е. если для пары (x, у) выполнено отношение R, то для пары (у, x) также выполнено отношение R. В матрице симметричного отношения элементы x и y, расположенные симметрично относительно главной диагонали, равны между собой.</p>
+            <p class="description">Асимметричность отношения R означает, что если (х, у) ∈ R, то (у, x) ∉ R, т.е. если для пары (x, у) выполнено отношение R, то для пары (у, x) отношение R не должно быть выполнено. В матрице симметричного отношения элементы x и y, расположенные симметрично относительно главной диагонали, не равны между собой.</p>
+            <p class="description">Транзитивность отношения R означает, что из (x, z) ∈ R и (z, y) ∈ R следует (z, у) ∈ R. Если в матрице транзитивного отношения элементы a<sub>il</sub> = 1 и а<sub>lj</sub>, = 1, то обязательно а<sub>ij</sub> = 1.</p>
+            <p class="description">Антитранзитивность отношения R означает, что из (x, z) ∉ R и (z, y) ∉ R следует (z, у) ∉ R. Если в матрице антитранзитивного отношения элементы a<sub>il</sub> = 0 и а<sub>lj</sub>, = 0, то обязательно а<sub>ij</sub> = 0.</p>
+            <p class="description">Рефлексивность отношения R означает, что (x, x) ∈ R, т.е. рефлексивное отношение выполняется между элементом и им самим (xRx). В матрице рефлексивного отношения на главной диагонали всегда стоят единицы.</p>
+            <p class="description">Антирефлексивность отношения В означает, что (x, x) ∉ R, т.е. отношение R выполняется только для несовпадающих элементов. В матрице антирефлексивного отношения на главной диагонали стоят нули.</p>
+            <p class="description">Также в задачах часто необходимо найти дополнительные и обратные отношения к данному.</p>
+            <p class="description">Дополнительным отношением U к отношению R называют все пары (x, y) ∉ R.</p>
+            <p class="description">Обратное отношение - это отношение, обратное к R — это двухместное отношение, состоящее из пар элементов (y, x), полученных перестановкой пар элементов (x, y) данного отношения R. Обозначается: R<sup>-1</sup>. Для данного отношения и обратного ему верно равенство: (R<sup>-1</sup>)<sup>-1</sup> = R.</p>
+        </div>
+        <div class="top_margin_5">
+            <h1 class="normal-letters">Максимальный поток</h1>
+            <p class="description">Существует направленный граф, у каждого ребра которого есть своя пропускная способность. Цель состоит в том, чтобы вычислить максимальный поток — поток с максимально возможным значением, означающим общее количество потока, покидающее s, такое же, что и общее количество потока, входящее в t.</p>
+        </div>
+        <div class="center cards_container">
+            <p><img alt="Картинка с пояснением" src="https://sun9-83.userapi.com/s/v1/if2/oEpF7ekj0uCzXTQqgbFm-bZ-HOF2v4e8odVJUNhC8v7_0edDdpenvRaZcGCIM1qvJXayxxUxnmdbgfVZZOmvEn-6.jpg?size=350x338&quality=96&type=album" class="image_main"></p>
+            <p><img alt="Картинка с пояснением" src="https://sun1-27.userapi.com/s/v1/if2/1aKLQyr0ET4hFnOMFkPmDB4lO2RQPHQoi7Bs1PnQE37X8-XhTILv3nPt9YRLqV5CvZ5ytpNQFN6JK_eUKeUKon52.jpg?size=361x386&quality=96&type=album" class="image_main"></p>
+        </div>
     </div>
 </div>
