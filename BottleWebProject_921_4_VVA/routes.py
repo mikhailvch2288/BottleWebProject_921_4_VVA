@@ -35,7 +35,7 @@ def about():
     )
 
 
-@route('/binary2')
+@route('/binary_relation_2')
 @view('binary2')
 def about():
     """Renders the about page."""
