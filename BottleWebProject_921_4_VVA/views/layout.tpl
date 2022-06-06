@@ -19,6 +19,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand">Practice</a>
+
+                <
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

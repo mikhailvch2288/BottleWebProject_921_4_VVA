@@ -1,4 +1,4 @@
-% rebase('layout.tpl', year=year)
+% rebase('layout.tpl', title=title, year=year)
 
 <h1>Калькулятор свойств отношений (с нахождением обратного)</h1>
 <p class="description">Требуется определить, обладает ли данное бинарное отношение 
@@ -9,7 +9,7 @@
 
 <div class="cards_container">
 	 <div class="solution_card">
-		Количество вершин графа<br>
+		Количество вершин графа:<br>
 		<div class="top_padding_05">
 			<input class="fill_horizontally text input-verticies-count" type="text" name="n" value="3"><br>
 		</div>
@@ -19,11 +19,11 @@
 	</div>
 
 	<div class="solution_card">
-		Обратное отношение<br>
+		Обратное отношение:<br>
 		<table id="table1" class="verticies_table top_margin_1 output-table">
 		</table>
 		 <div class="top_padding_1">
-		 	Свойства<br>
+		 	Свойства:<br>
 			<div class="top_padding_05 fill_horizontally">
 				<textarea class="fill_horizontally text" id="features-result" name="text" rows="4" readonly></textarea>
 			</div>
@@ -35,6 +35,8 @@
 	// Обработчик изменения размера таблицы
 	handleResize();
 
+
+	
 	// Обработчик нажатия на кнопку "Посчитать"
 	$('#calculate').on('click', function() {
 		var body = []
